@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="com.example.albert.eac3_compravenda.AfegirItem">
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="197dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:id="@+id/imageView"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                style="@style/myImageView"
+                android:layout_margin="10dp"
+                android:onClick="makePhoto" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="141dp"
+            android:weightSum="1">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:clickable="true"
+                android:hint="Title" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.38"
+                    android:clickable="true"
+                    android:hint="Price" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="€"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#030303" />
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/imageButton"
+                android:layout_gravity="center_horizontal"
+
+
+                android:baselineAlignBottom="false"
+                android:src="@drawable/ic_room_black_24dp"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/editText3"
+            android:gravity="top"
+            android:hint="Description" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
